@@ -88,29 +88,7 @@ GROUP BY WeekNumber;
 
 #
 
-## 🔹 **6. กราฟเปรียบเทียบ Weekly Report**
-ถ้าต้องการกราฟ **Month-over-Month Weekly Comparison** ใช้ **Matplotlib** หรือ **Power BI** แสดงข้อมูลรายสัปดาห์ของแต่ละเดือน
-
-### 📌 **ตัวอย่างโค้ดสร้างกราฟ (Python)**
-```python
-import matplotlib.pyplot as plt
-
-weeks = ["Week 1", "Week 2", "Week 3", "Week 4"]
-jan_sales = [10000, 15000, 20000, 18000]
-feb_sales = [12500, 14000, 22000, 19500]
-
-plt.plot(weeks, jan_sales, label="Jan 2025", marker='o')
-plt.plot(weeks, feb_sales, label="Feb 2025", marker='o')
-
-plt.xlabel("Week Number")
-plt.ylabel("Sales")
-plt.title("Weekly Sales Comparison: Jan vs Feb 2025")
-plt.legend()
-plt.show()
-```
-
-#
-
+ 
 ## 🔹 
 - การแบ่งสัปดาห์ขึ้นอยู่กับการใช้งาน: **ISO Week (Monday-Sunday)** หรือ **ปฏิทินปกติ (Sunday-Saturday)**
 - หา Weekly Report ได้โดยกำหนดช่วงวันที่ของแต่ละสัปดาห์
